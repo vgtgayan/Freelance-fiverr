@@ -1,0 +1,16 @@
+EN top_processor NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/top_processor.vhd" sub00/vhpl14 1525666741
+PB common common "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/common.vhd" sub00/vhpl01 1525666728
+EN instructions_rom NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Instructions_ROM.vhd" sub00/vhpl08 1525666735
+AR registers behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Registers.vhd" sub00/vhpl05 1525666732
+EN pc NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/PC.vhd" sub00/vhpl02 1525666729
+AR decoder behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Decoder.vhd" sub00/vhpl13 1525666740
+PH common NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/common.vhd" sub00/vhpl00 1525666727
+AR instructions_rom behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Instructions_ROM.vhd" sub00/vhpl09 1525666736
+AR top_processor rtl "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/top_processor.vhd" sub00/vhpl15 1525666742
+EN decoder NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Decoder.vhd" sub00/vhpl12 1525666739
+EN controller NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Controller.vhd" sub00/vhpl10 1525666737
+AR pc behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/PC.vhd" sub00/vhpl03 1525666730
+AR alu rtl "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/ALU.vhd" sub00/vhpl07 1525666734
+AR controller behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Controller.vhd" sub00/vhpl11 1525666738
+EN registers NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Registers.vhd" sub00/vhpl04 1525666731
+EN alu NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/ALU.vhd" sub00/vhpl06 1525666733

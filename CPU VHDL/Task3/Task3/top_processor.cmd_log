@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Task3/top_processor.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task3/Task3/top_processor.syr" 

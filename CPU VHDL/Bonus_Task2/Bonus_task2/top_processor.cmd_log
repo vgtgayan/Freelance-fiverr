@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Bonus_task2/top_processor.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Bonus_task2/top_processor.syr" 

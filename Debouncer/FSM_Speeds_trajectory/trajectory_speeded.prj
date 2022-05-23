@@ -1,0 +1,5 @@
+vhdl work "debouncing.vhd"
+vhdl work "speed_count.vhd"
+vhdl work "FSM_Speed.vhd"
+vhdl work "clk_divider.vhd"
+vhdl work "trajector_with_speed_control.vhd"

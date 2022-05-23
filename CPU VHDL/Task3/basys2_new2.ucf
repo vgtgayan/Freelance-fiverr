@@ -1,0 +1,26 @@
+# Pin assignment for DispCtl
+
+#Master Clock assignment
+NET "sys_clk" LOC = "B8"; # Bank = 0, Signal name = MCLK
+#Custom clock
+NET "cpu_clk" LOC = "C11"; # Bank = 2, Signal name = BTN1
+NET "cpu_clk_led" LOC = "M11" ; # Bank = 2, Signal name = LD1
+
+#Reset
+NET "rst" LOC = "G12"; # Bank = 0, Signal name = BTN0
+NET "rst_led" LOC = "M5" ;  # Bank = 2, Signal name = LD0
+
+# Connected to Basys2 onBoard 7seg display
+NET "DAT_7SEG<6>" LOC = "L14"; # Bank = 1, Signal name = CA
+NET "DAT_7SEG<5>" LOC = "H12"; # Bank = 1, Signal name = CB
+NET "DAT_7SEG<4>" LOC = "N14"; # Bank = 1, Signal name = CC
+NET "DAT_7SEG<3>" LOC = "N11"; # Bank = 2, Signal name = CD
+NET "DAT_7SEG<2>" LOC = "P12"; # Bank = 2, Signal name = CE
+NET "DAT_7SEG<1>" LOC = "L13"; # Bank = 1, Signal name = CF
+NET "DAT_7SEG<0>" LOC = "M12"; # Bank = 1, Signal name = CG
+#NET "dp<0>" LOC = "N13"; # Bank = 1, Signal name = DP
+
+NET "AN_7SEG<0>" LOC = "K14"; # Bank = 1, Signal name = AN3
+NET "AN_7SEG<1>" LOC = "M13"; # Bank = 1, Signal name = AN2
+NET "AN_7SEG<2>" LOC = "J12"; # Bank = 1, Signal name = AN1
+NET "AN_7SEG<3>" LOC = "F12"; # Bank = 1, Signal name = AN0

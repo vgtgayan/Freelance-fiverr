@@ -1,0 +1,2 @@
+work	"../Decoder.vhd"
+work	"../common.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Bonus_task2/tb_top_proccessor_isim_beh.exe" -prj "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Bonus_task2/tb_top_proccessor_beh.prj" "work.tb_top_proccessor" 

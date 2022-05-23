@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/top_processor_fpga.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/top_processor_fpga.syr" 
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/top_processor_fpga.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/top_processor_fpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/nexys2_new.ucf" -p xc3s100e-cp132-4 "top_processor_fpga.ngc" top_processor_fpga.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o top_processor_fpga_map.ncd top_processor_fpga.ngd top_processor_fpga.pcf 
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o top_processor_fpga_map.ncd top_processor_fpga.ngd top_processor_fpga.pcf 

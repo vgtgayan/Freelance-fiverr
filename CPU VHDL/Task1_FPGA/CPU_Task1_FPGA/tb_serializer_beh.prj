@@ -1,0 +1,4 @@
+vhdl work "../my_genpulse.vhd"
+vhdl work "../hex2sevenseg.vhd"
+vhdl work "../serializer.vhd"
+vhdl work "tb_serializer.vhd"

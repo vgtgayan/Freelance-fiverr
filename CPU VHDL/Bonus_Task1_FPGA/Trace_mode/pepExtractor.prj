@@ -1,0 +1,8 @@
+work	"../ALU.vhd"
+work	"../Controller.vhd"
+work	"../Decoder.vhd"
+work	"../Instructions_ROM.vhd"
+work	"../PC.vhd"
+work	"../Registers.vhd"
+work	"../common.vhd"
+work	"../top_processor.vhd"

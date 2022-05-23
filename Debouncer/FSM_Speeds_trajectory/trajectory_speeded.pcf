@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 26 20:01:16 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LD0" LOCATE = SITE "J14" LEVEL 1;
+COMP "LD1" LOCATE = SITE "J15" LEVEL 1;
+COMP "LD2" LOCATE = SITE "K15" LEVEL 1;
+COMP "on_off_btn" LOCATE = SITE "E18" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "speed_btn" LOCATE = SITE "D18" LEVEL 1;
+COMP "motor1" LOCATE = SITE "L15" LEVEL 1;
+COMP "motor2" LOCATE = SITE "K13" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\xiling\New folder\FSM_Speeds_trajectory\trajectory_speeded.ncd
+OUTFILE=E:\xiling\New folder\FSM_Speeds_trajectory\trajectory_speeded.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=E:\xiling\New folder\FSM_Speeds_trajectory
+LICENSE=WebPack
+USER_INFO=211478693_0_0_611

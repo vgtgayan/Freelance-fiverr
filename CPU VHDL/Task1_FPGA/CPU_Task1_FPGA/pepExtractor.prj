@@ -1,0 +1,3 @@
+work	"../hex2sevenseg.vhd"
+work	"../my_genpulse.vhd"
+work	"../serializer.vhd"

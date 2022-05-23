@@ -1,0 +1,11 @@
+
+#net "reset" loc = "R17";
+net "clk" LOC = "B8";
+net "speed_btn" LOC = "D18";
+net "on_off_btn" LOC  = "E18";
+net "motor1" LOC = "L15";
+net "motor2" LOC = "K13";
+
+net "LD0" loc = "J14";
+net "LD1" loc = "J15";
+net "LD2" loc =  "K15";

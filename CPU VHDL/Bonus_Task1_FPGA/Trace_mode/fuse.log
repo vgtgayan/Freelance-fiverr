@@ -1,0 +1,35 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/tb_top_processor_isim_beh.exe" -prj "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/tb_top_processor_beh.prj" "work.tb_top_processor" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../common.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../Registers.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../PC.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../Instructions_ROM.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../Decoder.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../Controller.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../ALU.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/../top_processor.vhd" into library work
+Parsing VHDL file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/tb_top_processor.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package common
+Compiling package numeric_std
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture behavioral of entity Registers [registers_default]
+Compiling architecture rtl of entity ALU [alu_default]
+Compiling architecture behavioral of entity Instructions_ROM [instructions_rom_default]
+Compiling architecture behavioral of entity Controller [controller_default]
+Compiling architecture behavioral of entity Decoder [decoder_default]
+Compiling architecture rtl of entity top_processor [top_processor_default]
+Compiling architecture behavior of entity tb_top_processor
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\tb_top_processor_isim_beh.exe.sim\libPortability.dll".
+Compiled 19 VHDL Units
+Built simulation executable C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/tb_top_processor_isim_beh.exe
+Fuse Memory Usage: 41776 KB
+Fuse CPU Usage: 1187 ms

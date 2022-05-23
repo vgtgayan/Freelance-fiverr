@@ -1,0 +1,384 @@
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 
+xst -intstyle ise -ifn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.xst" -ofn "E:/xiling/New folder/FSM_Speeds_trajectory/trajectory_speeded.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hardware.ucf -p xc3s500e-fg320-5 "trajectory_speeded.ngc" trajectory_speeded.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o trajectory_speeded_map.ncd trajectory_speeded.ngd trajectory_speeded.pcf 
+par -w -intstyle ise -ol high -t 1 trajectory_speeded_map.ncd trajectory_speeded.ncd trajectory_speeded.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml trajectory_speeded.twx trajectory_speeded.ncd -o trajectory_speeded.twr trajectory_speeded.pcf -ucf hardware.ucf 
+bitgen -intstyle ise -f trajectory_speeded.ut trajectory_speeded.ncd 

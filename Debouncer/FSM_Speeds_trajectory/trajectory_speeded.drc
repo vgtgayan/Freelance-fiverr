@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Mar 26 20:01:44 2018
+
+drc -z trajectory_speeded.ncd trajectory_speeded.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,16 @@
+EN top_processor NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/top_processor.vhd" sub00/vhpl14 1525804154
+PB common common "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/common.vhd" sub00/vhpl01 1525804141
+EN instructions_rom NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Instructions_ROM.vhd" sub00/vhpl08 1525804148
+AR registers behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Registers.vhd" sub00/vhpl05 1525804145
+EN pc NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/PC.vhd" sub00/vhpl02 1525804142
+AR decoder behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Decoder.vhd" sub00/vhpl13 1525804153
+PH common NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/common.vhd" sub00/vhpl00 1525804140
+AR instructions_rom behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Instructions_ROM.vhd" sub00/vhpl09 1525804149
+AR top_processor rtl "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/top_processor.vhd" sub00/vhpl15 1525804155
+EN decoder NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Decoder.vhd" sub00/vhpl12 1525804152
+EN controller NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Controller.vhd" sub00/vhpl10 1525804150
+AR pc behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/PC.vhd" sub00/vhpl03 1525804143
+AR alu rtl "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/ALU.vhd" sub00/vhpl07 1525804147
+AR controller behavioral "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Controller.vhd" sub00/vhpl11 1525804151
+EN registers NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/Registers.vhd" sub00/vhpl04 1525804144
+EN alu NULL "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task2/ALU.vhd" sub00/vhpl06 1525804146

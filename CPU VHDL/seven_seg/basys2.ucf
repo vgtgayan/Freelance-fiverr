@@ -1,0 +1,15 @@
+NET "SENSOR" LOC = "P11";
+
+NET "WALKIN" LOC = "G12";
+
+NET "CLR" LOC = "A7";
+NET "CLK" LOC = "B8";
+
+NET "walklight" LOC = "M5";
+NET "alllights<7>" LOC = "G1";
+NET "alllights<6>" LOC = "P4";
+NET "alllights<5>" LOC = "N4";
+NET "alllights<4>" LOC = "N5";
+NET "alllights<3>" LOC = "P6";
+NET "alllights<2>" LOC = "P7";
+

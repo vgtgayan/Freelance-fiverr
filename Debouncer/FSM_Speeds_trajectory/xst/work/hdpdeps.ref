@@ -1,0 +1,44 @@
+V3 22
+FL C:/Users/Toshiba/Downloads/debounce.vhd 2018/03/26.18:04:25 P.20131013
+EN work/debounce 1522067945 FL C:/Users/Toshiba/Downloads/debounce.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/debounce/logic 1522067946 \
+      FL C:/Users/Toshiba/Downloads/debounce.vhd EN work/debounce 1522067945
+FL "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd" 2018/03/24.23:38:13 P.20131013
+EN work/divclk 1522069260 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/divclk/Behavioral 1522069261 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd" \
+      EN work/divclk 1522069260
+FL "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd" 2018/03/26.20:00:51 P.20131013
+EN work/debouncer 1522069258 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/debouncer/rtl 1522069259 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd" \
+      EN work/debouncer 1522069258
+FL "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" 2018/03/26.19:45:24 P.20131013
+EN work/FSM_Speed 1522069264 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/FSM_Speed/FSM 1522069265 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" \
+      EN work/FSM_Speed 1522069264 CP debouncer
+FL "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd" 2018/03/24.10:29:58 P.20131013
+EN work/speed_count 1522069262 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/speed_count/Behavioral 1522069263 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd" \
+      EN work/speed_count 1522069262
+FL "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd" 2018/03/26.19:17:00 P.20131013
+EN work/trajectory_speeded 1522069266 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/trajectory_speeded/Behavioral 1522069267 \
+      FL "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd" \
+      EN work/trajectory_speeded 1522069266 CP divclk CP speed_count CP FSM_Speed

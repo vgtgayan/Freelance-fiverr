@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/tb_top_processor_isim_beh.exe" -prj "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Trace_mode/tb_top_processor_beh.prj" "work.tb_top_processor" 

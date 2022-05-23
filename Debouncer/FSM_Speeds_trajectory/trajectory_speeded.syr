@@ -1,0 +1,741 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: trajectory_speeded.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "trajectory_speeded.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "trajectory_speeded"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : trajectory_speeded
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd" in Library work.
+Entity <debouncer> compiled.
+Entity <debouncer> (Architecture <rtl>) compiled.
+Compiling vhdl file "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd" in Library work.
+Architecture behavioral of Entity divclk is up to date.
+Compiling vhdl file "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd" in Library work.
+Architecture behavioral of Entity speed_count is up to date.
+Compiling vhdl file "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" in Library work.
+Architecture fsm of Entity fsm_speed is up to date.
+Compiling vhdl file "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd" in Library work.
+Architecture behavioral of Entity trajectory_speeded is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <trajectory_speeded> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <divclk> in library <work> (architecture <behavioral>) with generics.
+	div = 313
+
+Analyzing hierarchy for entity <speed_count> in library <work> (architecture <behavioral>) with generics.
+	div1 = 4000
+
+Analyzing hierarchy for entity <speed_count> in library <work> (architecture <behavioral>) with generics.
+	div1 = 3000
+
+Analyzing hierarchy for entity <speed_count> in library <work> (architecture <behavioral>) with generics.
+	div1 = 1500
+
+Analyzing hierarchy for entity <FSM_Speed> in library <work> (architecture <fsm>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <trajectory_speeded> in library <work> (Architecture <behavioral>).
+INFO:Xst:1432 - Contents of array <int_array1> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <int_array1> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <int_array2> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <int_array2> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <trajectory_speeded> analyzed. Unit <trajectory_speeded> generated.
+
+Analyzing generic Entity <divclk> in library <work> (Architecture <behavioral>).
+	div = 313
+Entity <divclk> analyzed. Unit <divclk> generated.
+
+Analyzing generic Entity <speed_count.1> in library <work> (Architecture <behavioral>).
+	div1 = 4000
+Entity <speed_count.1> analyzed. Unit <speed_count.1> generated.
+
+Analyzing generic Entity <speed_count.2> in library <work> (Architecture <behavioral>).
+	div1 = 3000
+Entity <speed_count.2> analyzed. Unit <speed_count.2> generated.
+
+Analyzing generic Entity <speed_count.3> in library <work> (Architecture <behavioral>).
+	div1 = 1500
+Entity <speed_count.3> analyzed. Unit <speed_count.3> generated.
+
+Analyzing Entity <FSM_Speed> in library <work> (Architecture <fsm>).
+WARNING:Xst:752 - "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" line 50: Unconnected input port 'reset' of component 'debouncer' is tied to default value.
+WARNING:Xst:752 - "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" line 51: Unconnected input port 'reset' of component 'debouncer' is tied to default value.
+Entity <FSM_Speed> analyzed. Unit <FSM_Speed> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <rtl>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <divclk>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 9-bit up counter for signal <count>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <divclk> synthesized.
+
+
+Synthesizing Unit <speed_count_1>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd".
+    Found 1-bit register for signal <clk_out>.
+    Found 12-bit up counter for signal <count1>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <speed_count_1> synthesized.
+
+
+Synthesizing Unit <speed_count_2>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd".
+    Found 1-bit register for signal <clk_out>.
+    Found 12-bit up counter for signal <count1>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <speed_count_2> synthesized.
+
+
+Synthesizing Unit <speed_count_3>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd".
+    Found 1-bit register for signal <clk_out>.
+    Found 11-bit up counter for signal <count1>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <speed_count_3> synthesized.
+
+
+Synthesizing Unit <debouncer>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd".
+    Found 1-bit register for signal <pb_debounced>.
+    Found 1-bit register for signal <clk_100Hz>.
+    Found 23-bit up counter for signal <count500000>.
+    Found 1-bit xor2 for signal <pb_debounced$xor0000> created at line 37.
+    Found 1-bit register for signal <pb_sampled>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <FSM_Speed>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <LD3> is never assigned. Tied to value 0.
+WARNING:Xst:1305 - Output <Ld4> is never assigned. Tied to value 0.
+WARNING:Xst:1780 - Signal <count2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <count> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <cur_speed>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | low_speed                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit register for signal <speed_control>.
+    Found 1-bit register for signal <LD0>.
+    Found 1-bit register for signal <LD1>.
+    Found 1-bit register for signal <LD2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   5 D-type flip-flop(s).
+Unit <FSM_Speed> synthesized.
+
+
+Synthesizing Unit <trajectory_speeded>.
+    Related source file is "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd".
+WARNING:Xst:1781 - Signal <int_array2> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <int_array1> is used but never assigned. Tied to default value.
+    Found 370x32-bit ROM for signal <$varindex0000> created at line 80.
+    Found 370x32-bit ROM for signal <$varindex0001> created at line 93.
+    Found 1-bit register for signal <aclk>.
+    Found 1-bit 4-to-1 multiplexer for signal <aclk$mux0000>.
+    Found 32-bit up counter for signal <count1>.
+    Found 32-bit up counter for signal <count2>.
+    Found 32-bit up counter for signal <i>.
+    Found 32-bit up counter for signal <i0>.
+    Found 32-bit register for signal <int1>.
+    Found 32-bit register for signal <int2>.
+    Found 1-bit register for signal <temp1>.
+    Found 32-bit adder for signal <temp1$addsub0000> created at line 113.
+    Found 32-bit subtractor for signal <temp1$addsub0001> created at line 113.
+    Found 32-bit comparator greater for signal <temp1$cmp_gt0000> created at line 113.
+    Found 1-bit register for signal <temp2>.
+    Found 32-bit adder for signal <temp2$addsub0000> created at line 132.
+    Found 32-bit subtractor for signal <temp2$addsub0001> created at line 132.
+    Found 32-bit comparator greater for signal <temp2$cmp_gt0000> created at line 132.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   4 Counter(s).
+	inferred  67 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <trajectory_speeded> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 370x32-bit ROM                                        : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 2
+# Counters                                             : 10
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 2
+ 23-bit up counter                                     : 2
+ 32-bit up counter                                     : 4
+ 9-bit up counter                                      : 1
+# Registers                                            : 19
+ 1-bit register                                        : 16
+ 2-bit register                                        : 1
+ 32-bit register                                       : 2
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <states/cur_speed/FSM> on signal <cur_speed[1:2]> with sequential encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ low_speed    | 00
+ medium_speed | 01
+ high_speed   | 11
+ zero_speed   | 10
+--------------------------
+INFO:Xst:2261 - The FF/Latch <speed_control_1> in Unit <states> is equivalent to the following FF/Latch, which will be removed : <LD2> 
+INFO:Xst:2261 - The FF/Latch <speed_control_0> in Unit <states> is equivalent to the following FF/Latch, which will be removed : <LD1> 
+
+Synthesizing (advanced) Unit <trajectory_speeded>.
+INFO:Xst:3044 - The ROM <Mrom__varindex0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <int1>.
+INFO:Xst:3044 - The ROM <Mrom__varindex0001> will be implemented as a read-only BLOCK RAM, absorbing the register: <int2>.
+INFO:Xst:3225 - The RAM <Mrom__varindex0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 370-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <aclk>          | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <int1>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <Mrom__varindex0001> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 370-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <aclk>          | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i0>            |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <int2>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <trajectory_speeded> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 2
+ 370x32-bit single-port block RAM                      : 2
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 2
+ 32-bit subtractor                                     : 2
+# Counters                                             : 10
+ 11-bit up counter                                     : 1
+ 12-bit up counter                                     : 2
+ 23-bit up counter                                     : 2
+ 32-bit up counter                                     : 4
+ 9-bit up counter                                      : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <speed_control_1> in Unit <FSM_Speed> is equivalent to the following FF/Latch, which will be removed : <LD2> 
+INFO:Xst:2261 - The FF/Latch <speed_control_0> in Unit <FSM_Speed> is equivalent to the following FF/Latch, which will be removed : <LD1> 
+
+Optimizing unit <trajectory_speeded> ...
+
+Optimizing unit <debouncer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block trajectory_speeded, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 236
+ Flip-Flops                                            : 236
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : trajectory_speeded.ngr
+Top Level Output File Name         : trajectory_speeded
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 1292
+#      GND                         : 1
+#      INV                         : 78
+#      LUT1                        : 258
+#      LUT2                        : 117
+#      LUT3                        : 11
+#      LUT3_D                      : 1
+#      LUT4                        : 47
+#      LUT4_D                      : 7
+#      MUXCY                       : 432
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 338
+# FlipFlops/Latches                : 236
+#      FD                          : 5
+#      FDC                         : 48
+#      FDE                         : 4
+#      FDR                         : 179
+# RAMS                             : 2
+#      RAMB16_S36                  : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 2
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      282  out of   4656     6%  
+ Number of Slice Flip Flops:            236  out of   9312     2%  
+ Number of 4 input LUTs:                519  out of   9312     5%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  10  out of    232     4%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+divider/clkout1                    | BUFG                   | 105   |
+clk                                | BUFGP                  | 67    |
+aclk1                              | BUFG                   | 66    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+----------------------------------+-------+
+Control Signal                     | Buffer(FF name)                  | Load  |
+-----------------------------------+----------------------------------+-------+
+N0(XST_GND:G)                      | NONE(states/debouncer1/clk_100Hz)| 48    |
+-----------------------------------+----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.185ns (Maximum Frequency: 161.685MHz)
+   Minimum input arrival time before clock: 3.078ns
+   Maximum output required time after clock: 4.134ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'divider/clkout1'
+  Clock period: 6.185ns (frequency: 161.685MHz)
+  Total number of paths / destination ports: 3903 / 204
+-------------------------------------------------------------------------
+Delay:               6.185ns (Levels of Logic = 34)
+  Source:            count1_0 (FF)
+  Destination:       temp1 (FF)
+  Source Clock:      divider/clkout1 rising
+  Destination Clock: divider/clkout1 rising
+
+  Data Path: count1_0 to temp1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.520  count1_0 (count1_0)
+     LUT2:I1->O            1   0.612   0.000  Mcompar_temp1_cmp_gt0000_lut<0> (Mcompar_temp1_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_temp1_cmp_gt0000_cy<0> (Mcompar_temp1_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_temp1_cmp_gt0000_cy<1> (Mcompar_temp1_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_temp1_cmp_gt0000_cy<2> (Mcompar_temp1_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<3> (Mcompar_temp1_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<4> (Mcompar_temp1_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<5> (Mcompar_temp1_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<6> (Mcompar_temp1_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<7> (Mcompar_temp1_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<8> (Mcompar_temp1_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<9> (Mcompar_temp1_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<10> (Mcompar_temp1_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<11> (Mcompar_temp1_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<12> (Mcompar_temp1_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<13> (Mcompar_temp1_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<14> (Mcompar_temp1_cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<15> (Mcompar_temp1_cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<16> (Mcompar_temp1_cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<17> (Mcompar_temp1_cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<18> (Mcompar_temp1_cmp_gt0000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<19> (Mcompar_temp1_cmp_gt0000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<20> (Mcompar_temp1_cmp_gt0000_cy<20>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<21> (Mcompar_temp1_cmp_gt0000_cy<21>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<22> (Mcompar_temp1_cmp_gt0000_cy<22>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<23> (Mcompar_temp1_cmp_gt0000_cy<23>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<24> (Mcompar_temp1_cmp_gt0000_cy<24>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<25> (Mcompar_temp1_cmp_gt0000_cy<25>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<26> (Mcompar_temp1_cmp_gt0000_cy<26>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<27> (Mcompar_temp1_cmp_gt0000_cy<27>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<28> (Mcompar_temp1_cmp_gt0000_cy<28>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<29> (Mcompar_temp1_cmp_gt0000_cy<29>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_temp1_cmp_gt0000_cy<30> (Mcompar_temp1_cmp_gt0000_cy<30>)
+     MUXCY:CI->O           1   0.399   0.426  Mcompar_temp1_cmp_gt0000_cy<31> (Mcompar_temp1_cmp_gt0000_cy<31>)
+     LUT2:I1->O            1   0.612   0.357  temp1_or00001 (temp1_or0000)
+     FDR:R                     0.795          temp1
+    ----------------------------------------
+    Total                      6.185ns (4.882ns logic, 1.303ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.097ns (frequency: 196.196MHz)
+  Total number of paths / destination ports: 1809 / 76
+-------------------------------------------------------------------------
+Delay:               5.097ns (Levels of Logic = 24)
+  Source:            states/debouncer1/count500000_1 (FF)
+  Destination:       states/debouncer1/count500000_22 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: states/debouncer1/count500000_1 to states/debouncer1/count500000_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.532  states/debouncer1/count500000_1 (states/debouncer1/count500000_1)
+     LUT1:I0->O            1   0.612   0.000  states/debouncer1/Mcount_count500000_cy<1>_rt (states/debouncer1/Mcount_count500000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  states/debouncer1/Mcount_count500000_cy<1> (states/debouncer1/Mcount_count500000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<2> (states/debouncer1/Mcount_count500000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<3> (states/debouncer1/Mcount_count500000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<4> (states/debouncer1/Mcount_count500000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<5> (states/debouncer1/Mcount_count500000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<6> (states/debouncer1/Mcount_count500000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<7> (states/debouncer1/Mcount_count500000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<8> (states/debouncer1/Mcount_count500000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<9> (states/debouncer1/Mcount_count500000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<10> (states/debouncer1/Mcount_count500000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<11> (states/debouncer1/Mcount_count500000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<12> (states/debouncer1/Mcount_count500000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<13> (states/debouncer1/Mcount_count500000_cy<13>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<14> (states/debouncer1/Mcount_count500000_cy<14>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<15> (states/debouncer1/Mcount_count500000_cy<15>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<16> (states/debouncer1/Mcount_count500000_cy<16>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<17> (states/debouncer1/Mcount_count500000_cy<17>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<18> (states/debouncer1/Mcount_count500000_cy<18>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<19> (states/debouncer1/Mcount_count500000_cy<19>)
+     MUXCY:CI->O           1   0.052   0.000  states/debouncer1/Mcount_count500000_cy<20> (states/debouncer1/Mcount_count500000_cy<20>)
+     MUXCY:CI->O           0   0.052   0.000  states/debouncer1/Mcount_count500000_cy<21> (states/debouncer1/Mcount_count500000_cy<21>)
+     XORCY:CI->O           1   0.699   0.426  states/debouncer1/Mcount_count500000_xor<22> (states/debouncer1/Result<22>)
+     LUT2:I1->O            1   0.612   0.000  states/debouncer1/Mcount_count500000_eqn_221 (states/debouncer1/Mcount_count500000_eqn_22)
+     FDC:D                     0.268          states/debouncer1/count500000_22
+    ----------------------------------------
+    Total                      5.097ns (4.139ns logic, 0.958ns route)
+                                       (81.2% logic, 18.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'aclk1'
+  Clock period: 4.599ns (frequency: 217.451MHz)
+  Total number of paths / destination ports: 3122 / 146
+-------------------------------------------------------------------------
+Delay:               4.599ns (Levels of Logic = 9)
+  Source:            i_8 (FF)
+  Destination:       i_0 (FF)
+  Source Clock:      aclk1 rising
+  Destination Clock: aclk1 rising
+
+  Data Path: i_8 to i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.603  i_8 (i_8)
+     LUT4:I0->O            1   0.612   0.000  i_cmp_eq0000_wg_lut<0> (i_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  i_cmp_eq0000_wg_cy<0> (i_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  i_cmp_eq0000_wg_cy<1> (i_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  i_cmp_eq0000_wg_cy<2> (i_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  i_cmp_eq0000_wg_cy<3> (i_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  i_cmp_eq0000_wg_cy<4> (i_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  i_cmp_eq0000_wg_cy<5> (i_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  i_cmp_eq0000_wg_cy<6> (i_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          32   0.289   1.073  i_cmp_eq0000_wg_cy<7> (i_cmp_eq0000)
+     FDR:R                     0.795          i_0
+    ----------------------------------------
+    Total                      4.599ns (2.923ns logic, 1.676ns route)
+                                       (63.6% logic, 36.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              3.078ns (Levels of Logic = 2)
+  Source:            on_off_btn (PAD)
+  Destination:       states/debouncer1/pb_debounced (FF)
+  Destination Clock: clk rising
+
+  Data Path: on_off_btn to states/debouncer1/pb_debounced
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.520  on_off_btn_IBUF (on_off_btn_IBUF)
+     LUT3:I1->O            1   0.612   0.357  states/debouncer1/pb_debounced_not00011 (states/debouncer1/pb_debounced_not0001)
+     FDE:CE                    0.483          states/debouncer1/pb_debounced
+    ----------------------------------------
+    Total                      3.078ns (2.201ns logic, 0.877ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'divider/clkout1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            temp1 (FF)
+  Destination:       motor1 (PAD)
+  Source Clock:      divider/clkout1 rising
+
+  Data Path: temp1 to motor1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.514   0.357  temp1 (temp1)
+     OBUF:I->O                 3.169          motor1_OBUF (motor1)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 1)
+  Source:            states/speed_control_0 (FF)
+  Destination:       LD1 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: states/speed_control_0 to LD1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.514   0.451  states/speed_control_0 (states/speed_control_0)
+     OBUF:I->O                 3.169          LD1_OBUF (LD1)
+    ----------------------------------------
+    Total                      4.134ns (3.683ns logic, 0.451ns route)
+                                       (89.1% logic, 10.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.80 secs
+ 
+--> 
+
+Total memory usage is 322796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

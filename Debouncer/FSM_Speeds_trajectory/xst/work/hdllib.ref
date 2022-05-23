@@ -1,0 +1,12 @@
+AR debouncer rtl "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd" sub00/vhpl11 1522069259
+AR speed_count behavioral "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd" sub00/vhpl03 1522069263
+AR divclk behavioral "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd" sub00/vhpl01 1522069261
+EN trajectory_speeded NULL "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd" sub00/vhpl06 1522069266
+EN fsm_speed NULL "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" sub00/vhpl04 1522069264
+EN debounce NULL C:/Users/Toshiba/Downloads/debounce.vhd sub00/vhpl08 1522067945
+AR trajectory_speeded behavioral "E:/xiling/New folder/FSM_Speeds_trajectory/trajector_with_speed_control.vhd" sub00/vhpl07 1522069267
+EN divclk NULL "E:/xiling/New folder/FSM_Speeds_trajectory/clk_divider.vhd" sub00/vhpl00 1522069260
+EN debouncer NULL "E:/xiling/New folder/FSM_Speeds_trajectory/debouncing.vhd" sub00/vhpl10 1522069258
+AR fsm_speed fsm "E:/xiling/New folder/FSM_Speeds_trajectory/FSM_Speed.vhd" sub00/vhpl05 1522069265
+AR debounce logic C:/Users/Toshiba/Downloads/debounce.vhd sub00/vhpl09 1522067946
+EN speed_count NULL "E:/xiling/New folder/FSM_Speeds_trajectory/speed_count.vhd" sub00/vhpl02 1522069262

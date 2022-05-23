@@ -1,0 +1,4 @@
+vhdl isim_temp "../my_genpulse.vhd"
+vhdl isim_temp "../hex2sevenseg.vhd"
+vhdl isim_temp "../serializer.vhd"
+vhdl isim_temp "tb_serializer.vhd"

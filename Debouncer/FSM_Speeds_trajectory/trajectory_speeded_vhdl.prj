@@ -1,0 +1,5 @@
+vhdl work "E:\xiling\New folder\FSM_Speeds_trajectory\debouncing.vhd"
+vhdl work "E:\xiling\New folder\FSM_Speeds_trajectory\speed_count.vhd"
+vhdl work "E:\xiling\New folder\FSM_Speeds_trajectory\FSM_Speed.vhd"
+vhdl work "E:\xiling\New folder\FSM_Speeds_trajectory\clk_divider.vhd"
+vhdl work "E:\xiling\New folder\FSM_Speeds_trajectory\trajector_with_speed_control.vhd"

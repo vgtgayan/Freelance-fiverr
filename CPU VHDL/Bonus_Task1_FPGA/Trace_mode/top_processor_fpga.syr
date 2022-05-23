@@ -1,0 +1,1046 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: top_processor_fpga.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_processor_fpga.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_processor_fpga"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : top_processor_fpga
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/common.vhd" in Library work.
+Architecture common of Entity common is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/my_genpulse.vhd" in Library work.
+Architecture behavioral of Entity my_genpulse is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/hex2sevenseg.vhd" in Library work.
+Architecture structure of Entity hex2sevenseg is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Registers.vhd" in Library work.
+Architecture behavioral of Entity registers is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/ALU.vhd" in Library work.
+Architecture rtl of Entity alu is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Instructions_ROM.vhd" in Library work.
+Architecture behavioral of Entity instructions_rom is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Controller.vhd" in Library work.
+Architecture behavioral of Entity controller is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Decoder.vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/top_processor.vhd" in Library work.
+Architecture rtl of Entity top_processor is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/serializer.vhd" in Library work.
+Architecture behavioral of Entity serializer is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/debouncer.vhd" in Library work.
+Architecture rtl of Entity debouncer is up to date.
+Compiling vhdl file "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/top_processor_fpga.vhd" in Library work.
+Entity <top_processor_fpga> compiled.
+Entity <top_processor_fpga> (Architecture <rtl>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_processor_fpga> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <top_processor> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <serializer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Registers> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <Instructions_ROM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Controller> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <my_genpulse> in library <work> (architecture <behavioral>) with generics.
+	COUNT = 100000
+
+Analyzing hierarchy for entity <hex2sevenseg> in library <work> (architecture <structure>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_processor_fpga> in library <work> (Architecture <rtl>).
+WARNING:Xst:752 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/top_processor_fpga.vhd" line 77: Unconnected input port 'mode' of component 'top_processor' is tied to default value.
+WARNING:Xst:752 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/top_processor_fpga.vhd" line 77: Unconnected input port 'reg_addr' of component 'top_processor' is tied to default value.
+Entity <top_processor_fpga> analyzed. Unit <top_processor_fpga> generated.
+
+Analyzing Entity <top_processor> in library <work> (Architecture <rtl>).
+Entity <top_processor> analyzed. Unit <top_processor> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <Registers> in library <work> (Architecture <behavioral>).
+Entity <Registers> analyzed. Unit <Registers> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <rtl>).
+INFO:Xst:1561 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/ALU.vhd" line 40: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/ALU.vhd" line 52: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/ALU.vhd" line 60: Mux is complete : default of case is discarded
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Instructions_ROM> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <rom<0>> in unit <Instructions_ROM> has a constant value of 0001001000000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<1>> in unit <Instructions_ROM> has a constant value of 0001010000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<2>> in unit <Instructions_ROM> has a constant value of 0001010010000010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<3>> in unit <Instructions_ROM> has a constant value of 0011001001000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<4>> in unit <Instructions_ROM> has a constant value of 1111111001000110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<249>> in unit <Instructions_ROM> has a constant value of 0000001001000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<250>> in unit <Instructions_ROM> has a constant value of 0000010010001000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<251>> in unit <Instructions_ROM> has a constant value of 0000011011010000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<252>> in unit <Instructions_ROM> has a constant value of 0000100100011000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<253>> in unit <Instructions_ROM> has a constant value of 0000101101100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<254>> in unit <Instructions_ROM> has a constant value of 0000110110101000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<255>> in unit <Instructions_ROM> has a constant value of 0000111111110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<5>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<6>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<7>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<8>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<9>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<10>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<11>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<12>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<13>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<14>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<15>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<16>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<17>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<18>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<19>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<20>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<21>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<22>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<23>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<24>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<25>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<26>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<27>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<28>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<29>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<30>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<31>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<32>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<33>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<34>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<35>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<36>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<37>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<38>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<39>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<40>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<41>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<42>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<43>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<44>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<45>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<46>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<47>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<48>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<49>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<50>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<51>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<52>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<53>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<54>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<55>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<56>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<57>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<58>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<59>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<60>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<61>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<62>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<63>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<64>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<65>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<66>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<67>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<68>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<69>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<70>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<71>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<72>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<73>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<74>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<75>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<76>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<77>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<78>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<79>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<80>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<81>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<82>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<83>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<84>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<85>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<86>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<87>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<88>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<89>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<90>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<91>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<92>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<93>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<94>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<95>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<96>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<97>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<98>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<99>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<100>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<101>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<102>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<103>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<104>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<105>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<106>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<107>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<108>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<109>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<110>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<111>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<112>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<113>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<114>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<115>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<116>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<117>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<118>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<119>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<120>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<121>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<122>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<123>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<124>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<125>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<126>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<127>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<128>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<129>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<130>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<131>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<132>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<133>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<134>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<135>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<136>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<137>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<138>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<139>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<140>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<141>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<142>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<143>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<144>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<145>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<146>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<147>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<148>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<149>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<150>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<151>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<152>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<153>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<154>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<155>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<156>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<157>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<158>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<159>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<160>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<161>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<162>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<163>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<164>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<165>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<166>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<167>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<168>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<169>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<170>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<171>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<172>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<173>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<174>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<175>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<176>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<177>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<178>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<179>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<180>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<181>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<182>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<183>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<184>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<185>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<186>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<187>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<188>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<189>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<190>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<191>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<192>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<193>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<194>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<195>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<196>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<197>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<198>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<199>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<200>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<201>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<202>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<203>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<204>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<205>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<206>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<207>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<208>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<209>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<210>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<211>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<212>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<213>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<214>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<215>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<216>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<217>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<218>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<219>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<220>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<221>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<222>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<223>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<224>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<225>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<226>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<227>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<228>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<229>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<230>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<231>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<232>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<233>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<234>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<235>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<236>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<237>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<238>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<239>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<240>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<241>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<242>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<243>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<244>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<245>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<246>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<247>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rom<248>> in unit <Instructions_ROM> has a constant value of 1010111111111111 during circuit operation. The register is replaced by logic.
+Entity <Instructions_ROM> analyzed. Unit <Instructions_ROM> generated.
+
+Analyzing Entity <Controller> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Controller.vhd" line 102: Mux is complete : default of case is discarded
+Entity <Controller> analyzed. Unit <Controller> generated.
+
+Analyzing Entity <Decoder> in library <work> (Architecture <behavioral>).
+Entity <Decoder> analyzed. Unit <Decoder> generated.
+
+Analyzing Entity <serializer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/serializer.vhd" line 61: Unconnected output port 'Q' of component 'my_genpulse'.
+Entity <serializer> analyzed. Unit <serializer> generated.
+
+Analyzing generic Entity <my_genpulse> in library <work> (Architecture <behavioral>).
+	COUNT = 100000
+Entity <my_genpulse> analyzed. Unit <my_genpulse> generated.
+
+Analyzing Entity <hex2sevenseg> in library <work> (Architecture <structure>).
+Entity <hex2sevenseg> analyzed. Unit <hex2sevenseg> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <rtl>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <reg<0>> in unit <Registers> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/debouncer.vhd".
+    Found 1-bit register for signal <pb_debounced>.
+    Found 23-bit up counter for signal <count>.
+    Found 1-bit xor2 for signal <count$xor0000> created at line 23.
+    Found 1-bit register for signal <pb_sampled>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/PC.vhd".
+    Found 8-bit up counter for signal <PC_reg>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <Registers>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Registers.vhd".
+    Found 8-bit 8-to-1 multiplexer for signal <Rs2_data_out>.
+    Found 8-bit 8-to-1 multiplexer for signal <Rs1_data_out>.
+    Found 56-bit register for signal <reg<1:7>>.
+    Summary:
+	inferred  56 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <Registers> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/ALU.vhd".
+    Found 8-bit 16-to-1 multiplexer for signal <result>.
+    Found 8-bit addsub for signal <result$addsub0000>.
+    Found 8-bit shifter logical left for signal <result$mux0001> created at line 32.
+    Found 8-bit shifter logical right for signal <result$mux0002> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <Instructions_ROM>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Instructions_ROM.vhd".
+    Found 256x16-bit ROM for signal <data_out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Instructions_ROM> synthesized.
+
+
+Synthesizing Unit <Controller>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Controller.vhd".
+    Found 16x4-bit ROM for signal <control_reg>.
+    Found 8-bit adder for signal <new_PC>.
+    Found 8-bit comparator equal for signal <new_PC$cmp_eq0003> created at line 69.
+    Found 8-bit comparator less for signal <new_PC$cmp_lt0000> created at line 69.
+    Found 8-bit comparator not equal for signal <new_PC$cmp_ne0000> created at line 69.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <Controller> synthesized.
+
+
+Synthesizing Unit <Decoder>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/Decoder.vhd".
+Unit <Decoder> synthesized.
+
+
+Synthesizing Unit <my_genpulse>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/my_genpulse.vhd".
+    Found 17-bit up counter for signal <Qt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <my_genpulse> synthesized.
+
+
+Synthesizing Unit <hex2sevenseg>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/hex2sevenseg.vhd".
+    Found 16x7-bit ROM for signal <leds>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex2sevenseg> synthesized.
+
+
+Synthesizing Unit <top_processor>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/top_processor.vhd".
+Unit <top_processor> synthesized.
+
+
+Synthesizing Unit <serializer>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/serializer.vhd".
+    Found finite state machine <FSM_0> for signal <y>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | resetn                    (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s1                                             |
+    | Power Up State     | s1                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <s>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <serializer> synthesized.
+
+
+Synthesizing Unit <top_processor_fpga>.
+    Related source file is "C:/Users/gayan/Documents/FVR/CPU VHDL/Bonus_Task1_FPGA/top_processor_fpga.vhd".
+WARNING:Xst:646 - Signal <result<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <operand_2<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <top_processor_fpga> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x4-bit ROM                                          : 1
+ 16x7-bit ROM                                          : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 8-bit register                                        : 7
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+ 8-bit comparator not equal                            : 1
+# Multiplexers                                         : 3
+ 8-bit 16-to-1 multiplexer                             : 1
+ 8-bit 8-to-1 multiplexer                              : 2
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <seven_seg_inst/y/FSM> on signal <y[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s1    | 00
+ s2    | 01
+ s3    | 11
+ s4    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 3
+ 16x4-bit ROM                                          : 1
+ 16x7-bit ROM                                          : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 2
+ 8-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator less                                 : 1
+ 8-bit comparator not equal                            : 1
+# Multiplexers                                         : 17
+ 1-bit 8-to-1 multiplexer                              : 16
+ 8-bit 16-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 8-bit shifter logical left                            : 1
+ 8-bit shifter logical right                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_processor_fpga> ...
+
+Optimizing unit <debouncer> ...
+
+Optimizing unit <Registers> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Controller> ...
+
+Optimizing unit <serializer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_processor_fpga, actual ratio is 22.
+FlipFlop top_processor_inst/PC_inst/PC_reg_0 has been replicated 1 time(s)
+FlipFlop top_processor_inst/PC_inst/PC_reg_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 110
+ Flip-Flops                                            : 110
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_processor_fpga.ngr
+Top Level Output File Name         : top_processor_fpga
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 624
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 17
+#      LUT2                        : 39
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 136
+#      LUT3_D                      : 9
+#      LUT3_L                      : 3
+#      LUT4                        : 164
+#      LUT4_D                      : 10
+#      LUT4_L                      : 10
+#      MUXCY                       : 78
+#      MUXF5                       : 68
+#      MUXF6                       : 16
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 110
+#      FDC                         : 17
+#      FDCE                        : 91
+#      FDCPE                       : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 6
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      205  out of    960    21%  
+ Number of Slice Flip Flops:            110  out of   1920     5%  
+ Number of 4 input LUTs:                396  out of   1920    20%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of     83    28%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                       | Load  |
+-----------------------------------+---------------------------------------------+-------+
+cpu_clk_out1(cpu_clk_out1:O)       | BUFG(*)(top_processor_inst/PC_inst/PC_reg_0)| 66    |
+sys_clk                            | BUFGP                                       | 44    |
+-----------------------------------+---------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------+-------------------------------------+-------+
+Control Signal                                                                   | Buffer(FF name)                     | Load  |
+---------------------------------------------------------------------------------+-------------------------------------+-------+
+rst_out(seven_seg_inst/resetn_inv1:O)                                            | NONE(seven_seg_inst/gz/Qt_0)        | 85    |
+rst                                                                              | IBUF                                | 23    |
+debouncer_cpu_clk/pb_debounced_and0000(debouncer_cpu_clk/pb_debounced_and00001:O)| NONE(debouncer_cpu_clk/pb_debounced)| 2     |
+debouncer_cpu_clk/pb_debounced_and0001(debouncer_cpu_clk/pb_debounced_and00011:O)| NONE(debouncer_cpu_clk/pb_debounced)| 2     |
+---------------------------------------------------------------------------------+-------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 18.149ns (Maximum Frequency: 55.099MHz)
+   Minimum input arrival time before clock: 6.174ns
+   Maximum output required time after clock: 23.688ns
+   Maximum combinational path delay: 10.383ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cpu_clk_out1'
+  Clock period: 18.149ns (frequency: 55.099MHz)
+  Total number of paths / destination ports: 910002 / 132
+-------------------------------------------------------------------------
+Delay:               18.149ns (Levels of Logic = 28)
+  Source:            top_processor_inst/PC_inst/PC_reg_3 (FF)
+  Destination:       top_processor_inst/PC_inst/PC_reg_7 (FF)
+  Source Clock:      cpu_clk_out1 rising
+  Destination Clock: cpu_clk_out1 rising
+
+  Data Path: top_processor_inst/PC_inst/PC_reg_3 to top_processor_inst/PC_inst/PC_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            20   0.591   1.277  top_processor_inst/PC_inst/PC_reg_3 (top_processor_inst/PC_inst/PC_reg_3)
+     LUT4_L:I0->LO         1   0.704   0.104  top_processor_inst/Instructions_ROM_inst/Mrom_data_out181 (top_processor_inst/Instructions_ROM_inst/Mrom_data_out18)
+     LUT4:I3->O           12   0.704   0.996  top_processor_inst/Instructions_ROM_inst/Mrom_data_out201_4 (top_processor_inst/Instructions_ROM_inst/Mrom_data_out201_4)
+     LUT3:I2->O           24   0.704   1.287  top_processor_inst/Instructions_ROM_inst/Mrom_data_out201_2_f51 (top_processor_inst/instruction_in<6>)
+     LUT3:I2->O            1   0.704   0.000  top_processor_inst/Registers_inst/mux8_4 (top_processor_inst/Registers_inst/mux8_4)
+     MUXF5:I1->O           1   0.321   0.000  top_processor_inst/Registers_inst/mux8_3_f5 (top_processor_inst/Registers_inst/mux8_3_f5)
+     MUXF6:I1->O          11   0.521   1.012  top_processor_inst/Registers_inst/mux8_2_f6 (top_processor_inst/Rs1_data_out<0>)
+     LUT2:I1->O            1   0.704   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_lut<0> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<0> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<1> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<2> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<3> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<4> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<5> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<6> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.459   0.455  top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<7> (top_processor_inst/Controller_inst/Mcompar_new_PC_cmp_lt0000_cy<7>)
+     LUT4:I2->O            1   0.704   0.000  top_processor_inst/Controller_inst/new_PC_or0000_F (N162)
+     MUXF5:I0->O           8   0.321   0.792  top_processor_inst/Controller_inst/new_PC_or0000 (top_processor_inst/Controller_inst/new_PC_or0000)
+     LUT3:I2->O            1   0.704   0.000  top_processor_inst/Controller_inst/Madd_new_PC_lut<0> (top_processor_inst/Controller_inst/Madd_new_PC_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  top_processor_inst/Controller_inst/Madd_new_PC_cy<0> (top_processor_inst/Controller_inst/Madd_new_PC_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Madd_new_PC_cy<1> (top_processor_inst/Controller_inst/Madd_new_PC_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Madd_new_PC_cy<2> (top_processor_inst/Controller_inst/Madd_new_PC_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Madd_new_PC_cy<3> (top_processor_inst/Controller_inst/Madd_new_PC_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Madd_new_PC_cy<4> (top_processor_inst/Controller_inst/Madd_new_PC_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  top_processor_inst/Controller_inst/Madd_new_PC_cy<5> (top_processor_inst/Controller_inst/Madd_new_PC_cy<5>)
+     XORCY:CI->O           1   0.804   0.424  top_processor_inst/Controller_inst/Madd_new_PC_xor<6> (top_processor_inst/PC_in<6>)
+     LUT4:I3->O            1   0.704   0.000  top_processor_inst/PC_inst/Mcount_PC_reg_lut<6> (top_processor_inst/PC_inst/Mcount_PC_reg_lut<6>)
+     MUXCY:S->O            0   0.464   0.000  top_processor_inst/PC_inst/Mcount_PC_reg_cy<6> (top_processor_inst/PC_inst/Mcount_PC_reg_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  top_processor_inst/PC_inst/Mcount_PC_reg_xor<7> (top_processor_inst/PC_inst/Mcount_PC_reg7)
+     FDCE:D                    0.308          top_processor_inst/PC_inst/PC_reg_7
+    ----------------------------------------
+    Total                     18.149ns (11.802ns logic, 6.347ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sys_clk'
+  Clock period: 6.159ns (frequency: 162.364MHz)
+  Total number of paths / destination ports: 1631 / 70
+-------------------------------------------------------------------------
+Delay:               6.159ns (Levels of Logic = 8)
+  Source:            debouncer_cpu_clk/count_6 (FF)
+  Destination:       debouncer_cpu_clk/count_22 (FF)
+  Source Clock:      sys_clk rising
+  Destination Clock: sys_clk rising
+
+  Data Path: debouncer_cpu_clk/count_6 to debouncer_cpu_clk/count_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  debouncer_cpu_clk/count_6 (debouncer_cpu_clk/count_6)
+     LUT3:I0->O            1   0.704   0.000  debouncer_cpu_clk/count_cmp_eq0000_wg_lut<0> (debouncer_cpu_clk/count_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  debouncer_cpu_clk/count_cmp_eq0000_wg_cy<0> (debouncer_cpu_clk/count_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/count_cmp_eq0000_wg_cy<1> (debouncer_cpu_clk/count_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/count_cmp_eq0000_wg_cy<2> (debouncer_cpu_clk/count_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/count_cmp_eq0000_wg_cy<3> (debouncer_cpu_clk/count_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/count_cmp_eq0000_wg_cy<4> (debouncer_cpu_clk/count_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           2   0.459   0.622  debouncer_cpu_clk/count_cmp_eq0000_wg_cy<5> (debouncer_cpu_clk/count_cmp_eq0000)
+     LUT3:I0->O           23   0.704   1.202  debouncer_cpu_clk/count_not00031 (debouncer_cpu_clk/count_not0003)
+     FDCE:CE                   0.555          debouncer_cpu_clk/count_0
+    ----------------------------------------
+    Total                      6.159ns (3.713ns logic, 2.446ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sys_clk'
+  Total number of paths / destination ports: 325 / 49
+-------------------------------------------------------------------------
+Offset:              6.174ns (Levels of Logic = 25)
+  Source:            cpu_clk (PAD)
+  Destination:       debouncer_cpu_clk/count_22 (FF)
+  Destination Clock: sys_clk rising
+
+  Data Path: cpu_clk to debouncer_cpu_clk/count_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   1.218   1.437  cpu_clk_IBUF (cpu_clk_IBUF)
+     LUT3:I0->O            1   0.704   0.000  debouncer_cpu_clk/Mcount_count_lut<0> (debouncer_cpu_clk/Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  debouncer_cpu_clk/Mcount_count_cy<0> (debouncer_cpu_clk/Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<1> (debouncer_cpu_clk/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<2> (debouncer_cpu_clk/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<3> (debouncer_cpu_clk/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<4> (debouncer_cpu_clk/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<5> (debouncer_cpu_clk/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<6> (debouncer_cpu_clk/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<7> (debouncer_cpu_clk/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<8> (debouncer_cpu_clk/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<9> (debouncer_cpu_clk/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<10> (debouncer_cpu_clk/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<11> (debouncer_cpu_clk/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<12> (debouncer_cpu_clk/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<13> (debouncer_cpu_clk/Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<14> (debouncer_cpu_clk/Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<15> (debouncer_cpu_clk/Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<16> (debouncer_cpu_clk/Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<17> (debouncer_cpu_clk/Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<18> (debouncer_cpu_clk/Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<19> (debouncer_cpu_clk/Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<20> (debouncer_cpu_clk/Mcount_count_cy<20>)
+     MUXCY:CI->O           0   0.059   0.000  debouncer_cpu_clk/Mcount_count_cy<21> (debouncer_cpu_clk/Mcount_count_cy<21>)
+     XORCY:CI->O           1   0.804   0.000  debouncer_cpu_clk/Mcount_count_xor<22> (debouncer_cpu_clk/Mcount_count22)
+     FDCE:D                    0.308          debouncer_cpu_clk/count_22
+    ----------------------------------------
+    Total                      6.174ns (4.737ns logic, 1.437ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sys_clk'
+  Total number of paths / destination ports: 324 / 12
+-------------------------------------------------------------------------
+Offset:              10.014ns (Levels of Logic = 6)
+  Source:            seven_seg_inst/y_FSM_FFd2 (FF)
+  Destination:       DAT_7SEG<6> (PAD)
+  Source Clock:      sys_clk rising
+
+  Data Path: seven_seg_inst/y_FSM_FFd2 to DAT_7SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            21   0.591   1.303  seven_seg_inst/y_FSM_FFd2 (seven_seg_inst/y_FSM_FFd2)
+     LUT2:I0->O            1   0.704   0.000  seven_seg_inst/omux<0>241 (seven_seg_inst/omux<0>241)
+     MUXF5:I1->O           1   0.321   0.499  seven_seg_inst/omux<0>24_f5 (seven_seg_inst/omux<0>24)
+     LUT4:I1->O           14   0.704   1.175  seven_seg_inst/omux<0>107 (seven_seg_inst/omux<0>)
+     LUT4:I0->O            1   0.704   0.000  seven_seg_inst/DAT_7SEG<4>1 (seven_seg_inst/DAT_7SEG<4>)
+     MUXF5:I1->O           1   0.321   0.420  seven_seg_inst/DAT_7SEG<4>_f5 (DAT_7SEG_4_OBUF)
+     OBUF:I->O                 3.272          DAT_7SEG_4_OBUF (DAT_7SEG<4>)
+    ----------------------------------------
+    Total                     10.014ns (6.617ns logic, 3.397ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'cpu_clk_out1'
+  Total number of paths / destination ports: 277235 / 7
+-------------------------------------------------------------------------
+Offset:              23.688ns (Levels of Logic = 17)
+  Source:            top_processor_inst/PC_inst/PC_reg_6 (FF)
+  Destination:       DAT_7SEG<2> (PAD)
+  Source Clock:      cpu_clk_out1 rising
+
+  Data Path: top_processor_inst/PC_inst/PC_reg_6 to DAT_7SEG<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            22   0.591   1.339  top_processor_inst/PC_inst/PC_reg_6 (top_processor_inst/PC_inst/PC_reg_6)
+     LUT2_L:I0->LO         1   0.704   0.104  C_in<2>1_SW0 (N29)
+     LUT4:I3->O           13   0.704   0.987  C_in<2>1 (N8)
+     LUT4_D:I3->O         31   0.704   1.297  C_in<2>21 (opcode<2>)
+     LUT3:I2->O            1   0.704   0.000  top_processor_inst/Decoder_inst/immediate_out<0>1_F (N160)
+     MUXF5:I0->O           3   0.321   0.535  top_processor_inst/Decoder_inst/immediate_out<0>1 (N11)
+     LUT4:I3->O            2   0.704   0.482  top_processor_inst/Decoder_inst/immediate_out<1>1 (top_processor_inst/immediate<1>)
+     LUT3:I2->O           27   0.704   1.296  top_processor_inst/Controller_inst/operand_2<1>1 (operand_2<1>)
+     LUT3:I2->O            3   0.704   0.535  top_processor_inst/ALU_inst/opcode<1>1351 (top_processor_inst/ALU_inst/opcode<1>13_bdd7)
+     LUT4_D:I3->LO         1   0.704   0.135  top_processor_inst/ALU_inst/opcode<1>1341 (N185)
+     LUT3:I2->O            1   0.704   0.424  top_processor_inst/ALU_inst/opcode<1>51102_SW0 (N106)
+     LUT4:I3->O            1   0.704   0.000  top_processor_inst/ALU_inst/Mmux_result_32 (top_processor_inst/ALU_inst/Mmux_result_32)
+     MUXF5:I1->O           2   0.321   0.526  top_processor_inst/ALU_inst/Mmux_result_2_f5_1 (top_processor_inst/ALU_inst/result<2>1)
+     LUT4:I1->O            1   0.704   0.455  seven_seg_inst/omux<2>28 (seven_seg_inst/omux<2>28)
+     LUT4:I2->O           14   0.704   1.175  seven_seg_inst/omux<2>86 (seven_seg_inst/omux<2>)
+     LUT4:I0->O            1   0.704   0.000  seven_seg_inst/DAT_7SEG<2>2 (seven_seg_inst/DAT_7SEG<2>1)
+     MUXF5:I0->O           1   0.321   0.420  seven_seg_inst/DAT_7SEG<2>_f5 (DAT_7SEG_2_OBUF)
+     OBUF:I->O                 3.272          DAT_7SEG_2_OBUF (DAT_7SEG<2>)
+    ----------------------------------------
+    Total                     23.688ns (13.978ns logic, 9.710ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 201 / 12
+-------------------------------------------------------------------------
+Delay:               10.383ns (Levels of Logic = 7)
+  Source:            mode (PAD)
+  Destination:       DAT_7SEG<6> (PAD)
+
+  Data Path: mode to DAT_7SEG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.218   1.120  mode_IBUF (sw_led_3_OBUF)
+     LUT4:I2->O            1   0.704   0.000  seven_seg_inst/omux<2>781 (seven_seg_inst/omux<2>781)
+     MUXF5:I1->O           1   0.321   0.424  seven_seg_inst/omux<2>78_f5 (seven_seg_inst/omux<2>78)
+     LUT4:I3->O           14   0.704   1.175  seven_seg_inst/omux<2>86 (seven_seg_inst/omux<2>)
+     LUT4:I0->O            1   0.704   0.000  seven_seg_inst/DAT_7SEG<2>2 (seven_seg_inst/DAT_7SEG<2>1)
+     MUXF5:I0->O           1   0.321   0.420  seven_seg_inst/DAT_7SEG<2>_f5 (DAT_7SEG_2_OBUF)
+     OBUF:I->O                 3.272          DAT_7SEG_2_OBUF (DAT_7SEG<2>)
+    ----------------------------------------
+    Total                     10.383ns (7.244ns logic, 3.139ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.98 secs
+ 
+--> 
+
+Total memory usage is 401740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :  262 (   0 filtered)
+

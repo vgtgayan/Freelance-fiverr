@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1/CPU_Task_1/Controller.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1/CPU_Task_1/Controller.syr" 
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1/CPU_Task_1/Controller.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1/CPU_Task_1/Controller.syr" 
+xst -intstyle ise -ifn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1/CPU_Task_1/Controller.xst" -ofn "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1/CPU_Task_1/Controller.syr" 

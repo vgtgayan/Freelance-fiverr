@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1_FPGA/CPU_Task1_FPGA/tb_serializer_isim_beh.exe" -prj "C:/Users/gayan/Documents/FVR/CPU VHDL/Task1_FPGA/CPU_Task1_FPGA/tb_serializer_beh.prj" "work.tb_serializer" 
